@@ -7,7 +7,7 @@ function Hero(image,animation){
     this.setHeight(70);
     this.attrs.image = image;
     this.setAnimations(animation);
-    this.setAnimation('walk');
+    this.setAnimation('walkHero');
     this.vx = 15;
     this.vxback = -15;
     this.vy = 0;
@@ -20,16 +20,20 @@ function Hero(image,animation){
         this.move(this.vx,0);
         if (this.getX() > this.limiteDer)
         this.move(this.limiteDer - this.getX(),0)
-    }
+    };
     this.back = function(){
         this.move(this.vxback,0);
         if (this.getX() < 0)
         this.move(-this.getX(),0)
-    }
+    };
     this.jump = function(){
+        this.setAnimation('jumpHero');
         this.vy= -20;
         this.contador++;
-    }
+        this.afterFrame(10, function () {
+            this.setAnimation('staticHero');
+        });
+    };
     this.applyGravity = function(gravity,revolver){
         this.vy += gravity;
         this.move(0,this.vy);

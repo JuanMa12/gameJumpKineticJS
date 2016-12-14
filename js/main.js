@@ -2,8 +2,8 @@
  * Created by JuanM on 06/12/2016.
  */
 var framesHero = {
-    static: [{x:30, y:0, width: 65, height:79 }],
-    walk: [
+    staticHero: [{x:30, y:0, width: 65, height:79 }],
+    walkHero: [
         {x:30,  y:0, width: 65, height:79 },
         {x:109, y:0, width: 65, height:79 },
         {x:188, y:0, width: 65, height:79 },
@@ -11,7 +11,7 @@ var framesHero = {
         {x:346, y:0, width: 65, height:79 },
         {x:425, y:0, width: 65, height:79 }
     ],
-    jumFrame: [
+    jumpHero: [
         {x:109, y:70, width: 65, height:79},
         {x:188, y:70, width: 65, height:79},
         {x:267, y:70, width: 65, height:79},
@@ -25,6 +25,7 @@ var interval;
 var hero;
 var gravity = 0.8;
 var revolver = 0;
+var b = false;
 var game = new Game();
 //img object
 var heroImg = new Image();
@@ -67,6 +68,8 @@ scoreText = new Kinetic.Text({
 
 //levelOne
 function levelOne(){
+    if(b)return;
+    b = true;
     game.puntaje = 0;
     game.key= true;
     backgroundGame = new Kinetic.Layer();
@@ -121,6 +124,9 @@ function levelTwo(){
 
 //move hero
 function moveHero(){
+    if((keyboard[37] || keyboard[39])){
+        hero.setAnimation('walkHero');
+    }
     //left keyboard back
     if(keyboard[37]){
         hero.back();
