@@ -8,12 +8,18 @@ var images = [
     'images/key.png',
     'images/platform.png',
     'images/door.png',
-    'images/coin.png'
+    'images/coin.png',
+    'images/backgroundGame.jpg'
 ];
 window.addEventListener('load',function(){
     recharge = new PreloadJS();
     recharge.onProgress = progressLoad;
     load();
+    var starts = document.getElementsByClassName('start');
+    for(i in starts){
+        var btn = starts[i];
+        btn.addEventListener('click',startGame);
+    }
 });
 function load(){
     while(images.length > 0){
@@ -23,6 +29,15 @@ function load(){
 }
 function progressLoad(){
     if(recharge.progress = 1){
-        levelOne();
+        document.querySelector('#info').style.display = 'block';
     }
+}
+//start game
+function startGame(){
+    document.querySelector('#info').style.display = 'none';
+    document.querySelector('#lose').style.display = 'none';
+    document.querySelector('#win').style.display = 'none';
+    document.querySelector('#game').style.display = 'block';
+    levelOne();
+
 }

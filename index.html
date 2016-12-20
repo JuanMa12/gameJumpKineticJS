@@ -2,12 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <link rel="icon" href="images/platform.png" type="image/x-icon"/>
+    <title>Game Platforms</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Jura:400,600">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Black+Ops+One">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<div id="info" class="screen">
+<p>Juego de Juan Manuel Ruiz</p>
+    <img src="images/personajeF.png" width="200" alt="">
+    <div class="datos">
+        <h1 style="font-size: 50px">Plataformas en el Espacio</h1>
+        <button class="btn start">Iniciar</button>
+        <p>
+            <h3>Instrucciones</h3>
+            <p>Mover personaje con flechas</p>
+            <p>Saltar flecha de arriba</p>
+        </p>
+    </div>
+</div>
+
+<div id="win" class="screen">
+    <p>Juego de Juan Manuel Ruiz</p>
+    <table>
+        <tr>
+            <td>
+                <img src="images/personajeF.png" width="200" alt="">
+            </td>
+            <td>
+                <div class="datos">
+                    <h1>Ganaste!</h1>
+                    <button class="btn start">Jugar de Nuevo</button>
+                    <p>
+                    <h3>Puntaje</h3>
+                    <p id="score"></p>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="lose" class="screen">
+    <p>Juego de Juan Manuel Ruiz</p>
+    <img src="images/personajeF.png" width="200" alt="">
+    <div class="datos">
+        <h1>Perdiste!</h1>
+        <p>Puedes inicar de nuevo</p>
+        <button class="btn start">Reintentar</button>
+        <p>
+            <h3>Intrucciones</h3>
+            <p>Mover personaje con flechas</p>
+            <p>Saltar flecha hacia arriba</p>
+        </p>
+    </div>
+</div>
+
 <div id="game">
 
 </div>
+
+
 <script type="text/javascript" src="js/preloadjs-0.1.0.min.js"></script>
 <script type="text/javascript" src="js/kinetic-v4.3.3.min.js"></script>
 <script type="text/javascript" src="js/hero.js"></script>
@@ -15,6 +72,7 @@
 <script type="text/javascript" src="js/platform.js"></script>
 <script type="text/javascript" src="js/game.js"></script>
 <script type="text/javascript" src="js/coin.js"></script>
+<script type="text/javascript" src="js/key.js"></script>
 <script type="text/javascript" src="js/door.js"></script>
 <script type="text/javascript" src="js/images.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
