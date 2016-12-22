@@ -7,7 +7,5 @@ function Game(x,y){
     this.score = 0;
     this.key = false;
     this.level = 1;
-
-
 }
 Game.prototype = Object.create(Kinetic.Rect.prototype);

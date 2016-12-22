@@ -22,29 +22,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56766254">
-              <caret line="332" column="32" selection-start-line="332" selection-start-column="32" selection-end-line="332" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="327" column="27" selection-start-line="327" selection-start-column="27" selection-end-line="327" selection-end-column="27" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
-                <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-                <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-                <element signature="n#!!block;n#applyForce#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="images.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/images.js">
+      <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.32864675">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,17 +61,17 @@
         <option value="$PROJECT_DIR$/js/enemigo.js" />
         <option value="$PROJECT_DIR$/js/heroe.js" />
         <option value="$PROJECT_DIR$/js/plataforma.js" />
-        <option value="$PROJECT_DIR$/js/game.js" />
         <option value="$PROJECT_DIR$/js/enemy.js" />
         <option value="$PROJECT_DIR$/js/platform.js" />
         <option value="$PROJECT_DIR$/js/door.js" />
         <option value="$PROJECT_DIR$/js/coin.js" />
         <option value="$PROJECT_DIR$/js/hero.js" />
         <option value="$PROJECT_DIR$/js/key.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/images.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/images.js" />
+        <option value="$PROJECT_DIR$/js/game.js" />
       </list>
     </option>
   </component>
@@ -92,8 +87,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="804" />
-    <option name="width" value="562" />
+    <option name="x" value="562" />
+    <option name="width" value="804" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -228,10 +223,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="804" y="0" width="562" height="728" extended-state="0" />
+    <frame x="562" y="0" width="804" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.027888447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2956989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -286,9 +281,6 @@
           <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -319,9 +311,6 @@
           <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -352,9 +341,6 @@
           <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -385,9 +371,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -418,9 +401,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -441,9 +421,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -481,9 +458,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -521,9 +495,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,9 +532,6 @@
           <caret line="104" column="17" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="17" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,9 +562,6 @@
           <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,13 +626,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/door.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="25" selection-start-line="5" selection-start-column="3" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/hero.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -675,24 +633,6 @@
           <folding>
             <element signature="n#!!doc;n#Hero#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/key.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17926186">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc;n#Key#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,40 +650,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13356766">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/key.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4364641">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc;n#Key#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/images.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.40246046">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/door.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3167586">
+          <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56766254">
-          <caret line="332" column="32" selection-start-line="332" selection-start-column="32" selection-end-line="332" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="327" column="27" selection-start-line="327" selection-start-column="27" selection-end-line="327" selection-end-column="27" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#!!block;n#addKeyboardEvents#0" expanded="false" />
-            <element signature="n#!!block;n#moveEnemy#0" expanded="false" />
-            <element signature="n#!!block;n#applyForce#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32864675">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

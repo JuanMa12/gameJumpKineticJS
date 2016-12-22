@@ -17,8 +17,8 @@ window.addEventListener('load',function(){
     load();
     var starts = document.getElementsByClassName('start');
     for(i in starts){
-        var btn = starts[i];
-        btn.addEventListener('click',startGame);
+        var bottom = starts[i];
+        bottom.addEventListener('click',startGame)
     }
 });
 function load(){

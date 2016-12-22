@@ -49,7 +49,6 @@ platformImg.src = "images/platform.png";
 var backgroundImg = new Image();
 backgroundImg.src = "images/backgroundGame.jpg";
 
-
 //group Enemy
 groupObject = new Kinetic.Group({
     x:0,
@@ -87,7 +86,6 @@ function levelOne(){
     game.score = 0;
     if(b)return;
     b = true;
-    game.puntaje = 0;
     game.key= true;
     backgroundGame = new Kinetic.Layer();
     //enemy
@@ -114,6 +112,9 @@ function levelOne(){
     groupObject.add(new Coin(350,stage.getHeight()/3-130,coinImg));
     groupObject.add(new Coin(910,stage.getHeight()/6,coinImg));
     groupObject.add(new Coin(1220,stage.getHeight()-80,coinImg));
+
+    //key
+    groupObject.add(new Key(780, stage.getHeight()/3.9-60, keyImg));
 
     //door
     groupObject.add(new Door(910,stage.getHeight()-85,doorImg));
@@ -143,7 +144,6 @@ function levelTwo() {
 
     //enemy
     groupObject.add(new Enemy(200, stage.getHeight() / 1.5-60, enemyImg));
-    groupObject.add(new Enemy(850, stage.getHeight() / 3.9 - 60, enemyImg));
     groupObject.add(new Enemy(25, stage.getHeight() / 3 - 60, enemyImg));
     groupObject.add(new Enemy(500,stage.getHeight()-75,enemyImg));
     groupObject.add(new Enemy(580,stage.getHeight()-75,enemyImg));
@@ -155,7 +155,7 @@ function levelTwo() {
     groupObject.add(new Platform(190, stage.getHeight() / 1.5, platformImg));
     groupObject.add(new Platform(10, stage.getHeight() / 3, platformImg));
     groupObject.add(new Platform(310, stage.getHeight() / 4, platformImg));
-    groupObject.add(new Platform(870, stage.getHeight() / 3.9, platformImg));
+    groupObject.add(new Platform(700, stage.getHeight() / 3.9, platformImg));
 
     //coin
     groupObject.add(new Coin(350, stage.getHeight() / 3 - 130, coinImg));
@@ -164,7 +164,7 @@ function levelTwo() {
     groupObject.add(new Door(1000, stage.getHeight() - 90, doorImg));
 
     //key
-    groupObject.add(new Key(850, stage.getHeight()/3.9-60, keyImg));
+    groupObject.add(new Key(780, stage.getHeight()/3.9-60, keyImg));
 
     //hero
     hero = new Hero(heroImg, framesHero);
@@ -304,43 +304,48 @@ function collisionPlatform(){
                 }
             }
             //collision hero -> platform
-             else   if(platform instanceof Platform && hero.getY() < platform.getY() && hero.vy >=0){
+             else{
+                if(platform instanceof Platform && hero.getY() < platform.getY() && hero.vy >=0){
                     hero.contador = 0;
                     hero.setY(platform.getY() - hero.getHeight());
                     hero.vy *= revolver; //stop hero in platform
                 }
-                    //collision hero -> coin
-                    else   if(platform instanceof Coin){
+            //collision hero -> coin
+            else   if(platform instanceof Coin){
+                platform.remove();
+                game.score += 10;
+            }
+            //collision hero -> key
+            else {
+                    if(platform instanceof Key){
                         platform.remove();
-                        game.score += 10;
+                        game.key = true;
+                        continue;
                     }
-
-                    else if(platform instanceof Key){
-                            platform.remove();
-                            game.key = true;
-                            continue;
-                        }
-                        //collision hero -> door
-                        else   if(platform instanceof Door && game.key){
-                            //LEVEL ONE
-                            if(game.level == 1) {
-                                groupObject.removeChildren();
-                                window.clearInterval(interval);
-                                game.level = 2;
-                                levelTwo();
+                    //collision hero -> door
+                    else {
+                        if(platform instanceof Door && game.key){
+                           //LEVEL ONE
+                           if(game.level == 1) {
+                              groupObject.removeChildren();
+                              window.clearInterval(interval);
+                              game.level = 2;
+                              levelTwo();
+                             }
+                             else {
+                                   if (game.level == 2)
+                                     //LEVEL TWO
+                                     groupObject.removeChildren();
+                                     document.querySelector('#win').style.display = 'block';
+                                     document.querySelector('#game').style.display = 'none';
+                                     document.querySelector('#score').innerHTML = game.score;
+                                     window.clearInterval(interval);
+                                     b = false;
+                             }
                             }
-                            else
-                                if(game.level == 2) {
-                                //LEVEL TWO
-                                    groupObject.removeChildren();
-                                    document.querySelector('#win').style.display = 'block';
-                                    document.querySelector('#game').style.display = 'none';
-                                    document.querySelector('#score').innerHTML = game.score;
-                                    window.clearInterval(interval);
-                                    b = false;
-                                }
-
                         }
+                    }
+                }
         }
     }
 }
