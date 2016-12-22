@@ -86,7 +86,7 @@ function levelOne(){
     game.score = 0;
     if(b)return;
     b = true;
-    game.key= true;
+    game.key= false;
     backgroundGame = new Kinetic.Layer();
     //enemy
     groupObject.add(new Enemy(200,stage.getHeight()-75,enemyImg));
@@ -256,7 +256,7 @@ function hit(a,b){
 }
 
 function moveBackground(){
-    if(hero.getX() < (stage.getWidth()/2) && keyboard[39]){
+    if(hero.getX() > (stage.getWidth()/2) && keyboard[39]){
         hero.vx = 2;
         for(i in groupObject.children){
             var groupMove = groupObject.children[i];
@@ -327,21 +327,24 @@ function collisionPlatform(){
                         if(platform instanceof Door && game.key){
                            //LEVEL ONE
                            if(game.level == 1) {
-                              groupObject.removeChildren();
-                              window.clearInterval(interval);
-                              game.level = 2;
-                              levelTwo();
-                             }
-                             else {
-                                   if (game.level == 2)
-                                     //LEVEL TWO
-                                     groupObject.removeChildren();
-                                     document.querySelector('#win').style.display = 'block';
-                                     document.querySelector('#game').style.display = 'none';
-                                     document.querySelector('#score').innerHTML = game.score;
-                                     window.clearInterval(interval);
-                                     b = false;
-                             }
+                               if(game.key == true){
+                                   console.log('level=' + game.level + ', key=' + game.key);
+                                   groupObject.removeChildren();
+                                   window.clearInterval(interval);
+                                   game.key = false;
+                                   game.level = 2;
+                                   levelTwo();
+                               }
+                           }else{
+                               if (game.level == 2)
+                                   //LEVEL TWO
+                                   groupObject.removeChildren();
+                                   document.querySelector('#win').style.display = 'block';
+                                   document.querySelector('#game').style.display = 'none';
+                                   document.querySelector('#score').innerHTML = game.score;
+                                   window.clearInterval(interval);
+                                   b = false;
+                                 }
                             }
                         }
                     }
